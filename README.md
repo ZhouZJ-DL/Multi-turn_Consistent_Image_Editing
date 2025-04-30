@@ -1,7 +1,8 @@
 # [Multi-turn Consistent Image Editing]
 
-[![arXiv](https://img.shields.io/badge/arXiv-FireFlow-b31b1b.svg)](https://arxiv.org/abs/2412.07517)
-[![Huggingface space](https://img.shields.io/badge/🤗-Online%20Demo-blue.svg)](https://huggingface.co/spaces/MagicBag/FireFlow)
+[![arXiv](https://img.shields.io/badge/arXiv-Multi_Turn-b31b1b.svg)]()
+[![project](https://img.shields.io/badge/project-Multi_Turn-green.svg)]()
+<!--[![Huggingface space](https://img.shields.io/badge/🤗-Online%20Demo-blue.svg)]()[deploying]-->
 
 *A multi-turn image editing framework is proposed that leverages flow matching inversion and a dual-objective guided sampling process to preserve the underlying image distribution across successive edits.*
 <!-- [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](link/to/your/huggingface_space) -->
@@ -41,7 +42,7 @@ pip install -r requirements.txt
 ```
 
 ## 🎛️ 2. Gradio Demo Usage
-Try our demo directly on HuggingFace Space
+Try our demo directly on HuggingFace Space [Deploying now]
 [![Huggingface space](https://img.shields.io/badge/🤗-Online%20Demo-blue.svg)]()
 
 Or
