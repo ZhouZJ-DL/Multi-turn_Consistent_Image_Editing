@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  
+  <style>
+    .image-row {
+            display: flex;
+            flex-wrap: wrap; /* Ensures responsiveness */
+            justify-content: space-around;
+            margin: 3px;
+        }
+
+        .image-row-slide {
+          display: flex;       /* Arrange image containers horizontally */
+          flex-wrap: wrap;     /* Allow wrapping to the next line if needed */
+          gap: 10px;           /* Space between image containers */
+          justify-content: center; /* Center the row content horizontally */
+          padding: 15px 10px;  /* Add some padding around the images */
+          box-sizing: border-box; /* Include padding in width calculation */
+          width: 100%;         /* Make the row take the full width of its parent (.item) */
+        }
+
+        .image-container {
+            text-align: center;
+            flex: 1 1 12%; /* Adjusts the width of each image container */
+            margin: 5px;
+            max-width: 18%;
+        }
+
+        .image-caption {
+            margin-top: 0px;
+            font-size: 12px;
+            color: #555;
+        }
+
+  </style>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0XP46M1FLB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0XP46M1FLB');
+</script>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"> Multi-turn Consistent Image Editing
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zijun Zhou</a><sup>1</sup>,
+                <a href="" target="_blank">Yingying Deng</a><sup></sup>,
+                <a href="" target="_blank">Xiangyu He</a><sup></sup>,
+                <a href="" target="_blank">Weiming Dong</a><sup></sup>,
+                <a href="" target="_blank">Fan Tang</a><sup></sup>
+            </span>
+    
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institute of Automation, Chinese Academy of Sciences</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                    <!--  Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 1em;">
+                              <image href="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" height="100%" width="100%"/>
+                            </svg>
+                          </span>
+                        <span>Demo</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper Overview -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Many real-world applications, such as interactive photo retouching, artistic content creation, and product design, require flexible and iterative image editing. However, existing image editing methods primarily focus on achieving the desired modifications in a single step, which often struggles with ambiguous user intent, complex transformations, or the need for progressive refinements. 
+            As a result, these methods frequently produce inconsistent outcomes or fail to meet user expectations.
+            To address these challenges, we propose a multi-turn image editing framework that enables users to iteratively refine their edits, progressively achieving more satisfactory results. 
+            Our approach leverages flow matching for accurate image inversion and a dual-objective Linear Quadratic Regulators (LQR) for stable sampling, effectively mitigating error accumulation.
+            Additionally, by analyzing the layer-wise roles of transformers, we introduce a adaptive attention highlighting method  that enhances editability while preserving multi-turn coherence.
+            Extensive experiments demonstrate that our framework significantly improves edit success rates and visual fidelity compared to existing methods.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- dual-objective -->
+<section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop"> 
+      <div class="container">
+        <!-- Paper video. -->
+        <h2 class="title is-3">Dual-objective LQR Integrete with High-order ODE</h2>
+        <p>
+            We visualize the differences in single-step and multi-round accumulative errors during inversion (←) and editing (↘) across different ReFlow-based editing methods.
+          </p>
+          
+          <p>
+            <strong>(a)</strong> Vanilla ReFlow struggles with structure preservation during inversion due to the truncation error of the Euler method.
+          </p>
+          
+          <p>
+            <strong>(b)</strong> While a second-order ODE solver reduces truncation error in a single step, the accumulated error over multiple editing rounds remains significant.
+          </p>
+          
+          <p>
+            <strong>(c)</strong> Incorporating the source image as guidance (dotted ↙) via LQR improves performance in a single step but becomes less effective as accumulated errors increase with more steps.
+          </p>
+          
+          <p>
+            <strong>(d)</strong> Our approach addresses this issue by integrating both techniques, leveraging a dual-objective LQR coupled with a high-order solver to enhance stability and accuracy.
+          </p>
+          <div style="margin-bottom: 20px;"></div> <!-- Adds spacing -->
+        </div>
+
+        <div class="columns is-centered has-text-centered">
+          
+            <img src="static/images/framework_page2.drawio.svg" alt="Dual-objective" >
+        </div>
+        
+      
+    </div>
+  </section>
+  <!-- End dual-objective image -->
+
+<!-- pipeline -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop"> 
+    <div class="container is-max-desktop"> 
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Pipeline</h2>
+      <p>
+        In each editing iteration, a high-accuracy rectified flow inversion maps the image back to the Gaussian noise space, 
+        followed by sampling to generate the edited images. 
+        To better constrain the distribution of edits across multiple turns, the original image and previous editing results serve as guidance during subsequent sampling. 
+        Additionally, a highlighted region in the attention mask further preserves the content structure of the edited outputs.
+      </p>
+      <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+          <img src="static/images/framework-Page-1.drawio.svg" alt="Pipeline" style="width: 100%;">
+        </div>
+      </div>
+      
+    </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- End pipeline image -->
+
+<!-- reconstruction -->
+<section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop"> 
+
+      <div class="container">
+        <!-- Paper video. -->
+        <h2 class="title is-3">Multi-turn Reconstruction</h2>
+       
+        <div class="image-row">
+            <div class="image-container">
+                <img src="static/images/reconstruction/vermeer/vermeer.jpg" alt="Image 1">
+                <div class="image-caption">vermeer</div>
+            </div>
+            <div class="image-container">
+                <img src="static/images/reconstruction/vermeer/mtf_r1_2.webp" alt="Image 1">
+                <div class="image-caption">turn #1</div>
+            </div>
+            <div class="image-container">
+                <img src="static/images/reconstruction/vermeer/mtf_r2.webp" alt="Image 1">
+                <div class="image-caption">turn #2</div>
+            </div>
+            <div class="image-container">
+                <img src="static/images/reconstruction/vermeer/mtf_r4_2.webp" alt="Image 1">
+                <div class="image-caption">turn #4</div>
+            </div>
+            <div class="image-container">
+                <img src="static/images/reconstruction/vermeer/mtf_r6.webp" alt="Image 1">
+                <div class="image-caption">turn #6</div>
+            </div>
+            <div class="image-container">
+                <img src="static/images/reconstruction/vermeer/mtf_r8.webp" alt="Image 1">
+                <div class="image-caption">turn #8</div>
+            </div>
+            <div class="image-container">
+                <img src="static/images/reconstruction/vermeer/mtf_r10.webp" alt="Image 1"> 
+                <div class="image-caption">turn #10</div>
+            </div>
+            
+        </div>
+
+        <div class="image-row">
+            <div class="image-container">
+                <img src="static/images/reconstruction/bird/000000000011.jpg" alt="Image 1">
+                <div class="image-caption">bird</div>
+            </div>
+            <div class="image-container">
+                <img src="static/images/reconstruction/bird/000000000011.jpg" alt="Image 1">
+                <div class="image-caption">turn #1</div>
+            </div>
+            <div class="image-container">
+                <img src="static/images/reconstruction/bird/000000000011.jpg" alt="Image 1">
+                <div class="image-caption">turn #2</div>
+            </div>
+            <div class="image-container">
+                <img src="static/images/reconstruction/bird/mtf__r4_v2.jpg" alt="Image 1">
+                <div class="image-caption">turn #4</div>
+            </div>
+            <div class="image-container">
+                <img src="static/images/reconstruction/bird/mtflow_r6.webp" alt="Image 1">
+                <div class="image-caption">turn #6</div>
+            </div>
+            <div class="image-container">
+                <img src="static/images/reconstruction/bird/mtflow_r8.webp" alt="Image 1">
+                <div class="image-caption">turn #8</div>
+            </div>
+            <div class="image-container">
+                <img src="static/images/reconstruction/bird/000000000011.jpg" alt="Image 1">
+                <div class="image-caption">turn #10</div>
+            </div>
+            
+        </div> 
+      </div>
+    </div>
+  </section>
+  <!-- End reconstruction image -->
+
+<!-- editing -->
+<section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop"> 
+
+      <div class="container">
+        
+        <h2 class="title is-3">Multi-turn Editing</h2>
+
+        <!-- woman dog -->
+        <div class="image-row">
+          <div class="image-container">
+              <img src="static/images/editing/girl_dog/000000000110.jpg" alt="Image 1">
+              <div class="image-caption">source</div>
+          </div>
+          <div class="image-container">
+              <img src="static/images/editing/girl_dog/ours_a old woman is holding a dog_img_0.jpg" alt="Image 2">
+              <div class="image-caption"><i style="color: #B22222;">aged</i></div>
+          </div>
+          <div class="image-container">
+              <img src="static/images/editing/girl_dog/ours_an old woman is holding a cat_img_0.jpg" alt="Image 3">
+              <div class="image-caption"> <del>dog</del> &rarr; <i style="color: #B22222;">cat</i></div>
+          </div>
+          <div class="image-container">
+              <img src="static/images/editing/girl_dog/ours_an old woman is holding a cat with a blue collar_img_0.jpg" alt="Image 4">
+              <div class="image-caption">cat with <i style="color: #B22222;">a blue collar</i></div>
+          </div>
+          <div class="image-container">
+              <img src="static/images/editing/girl_dog/ours_an old woman in a red dress is holding a cat with a blue collar_img_0.jpg" alt="Image 5">
+              <div class="image-caption">old woman <i style="color: #B22222;">in red dress</i></div>
+          </div>
+      </div>
+
+      <!-- cat -->
+      <div class="image-row">
+        <div class="image-container">
+            <img src="static/images/editing/cat/221000000002.jpg" alt="Image 1">
+            <div class="image-caption">source</div>
+        </div>
+        <div class="image-container">
+            <img src="static/images/editing/cat/ours_a cat wearing hat standing on fence_img_0.jpg" alt="Image 2">
+            <div class="image-caption">+ <i style="color: #B22222;">hat</i></div>
+        </div>
+        <div class="image-container">
+            <img src="static/images/editing/cat/ours_a cat wearing a blue hat standing on fence_img_0.jpg" alt="Image 3">
+            <div class="image-caption"> <i style="color: #B22222;">[blue] </i>hat</div>
+        </div>
+        <div class="image-container">
+            <img src="static/images/editing/cat/ours_a cat wearing a blue hat and sunglasses standing on fence_img_0.jpg" alt="Image 4">
+            <div class="image-caption">+ <i style="color: #B22222;">sunglasses</i></div>
+        </div>
+        <div class="image-container">
+            <img src="static/images/editing/cat/ours_a cat wearing a blue hat, sunglasses, and a scarf standing on fence_img_0.jpg" alt="Image 5">
+            <div class="image-caption">+ <i style="color: #B22222;">blue scarf</i></div>
+        </div>
+    </div>
+  
+    <!-- butterfly -->
+    <div class="image-row">
+      <div class="image-container">
+          <img src="static/images/editing/butterfly/121000000004.jpg" alt="Image 1">
+          <div class="image-caption">source</div>
+      </div>
+      <div class="image-container">
+          <img src="static/images/editing/butterfly/mtFlow_a blue and white butterfly sits on a branch_img_0.jpg" alt="Image 2">
+          <div class="image-caption"><del>bird</del> &rarr; <i style="color: #B22222;">butterfly</i></div>
+      </div>
+      <div class="image-container">
+          <img src="static/images/editing/butterfly/mtFlow_a blue and white butterfly sits on a branch with pink flowers_img_0.jpg" alt="Image 3">
+          <div class="image-caption"> + <i style="color: #B22222;">pink flower</i></div>
+      </div>
+      <div class="image-container">
+          <img src="static/images/editing/butterfly/mtFlow_a blue and white butterfly sits on a branch with pink flowers and a red ladybug_img_0.jpg" alt="Image 4">
+          <div class="image-caption">+ <i style="color: #B22222;">ladybug</i></div>
+      </div>
+      <div class="image-container">
+          <img src="static/images/editing/butterfly/mtFlow_a blue and white butterfly sits on a branch with pink flowers and a red ladybug under a sunny sky_img_0.jpg" alt="Image 5">
+          <div class="image-caption">reconstruction</div>
+      </div>
+  </div>
+
+  <!-- girl coffee -->
+  <div class="image-row">
+    <div class="image-container">
+        <img src="static/images/editing/girl_coffee/112000000003.jpg" alt="Image 1">
+        <div class="image-caption">source</div>
+    </div>
+    <div class="image-container">
+        <img src="static/images/editing/girl_coffee/mtflow_a girl with black hair and a white shirt is holding a coffee_img_0.jpg" alt="Image 2">
+        <div class="image-caption"><del>phone</del> &rarr; <i style="color: #B22222;">coffee</i></div>
+    </div>
+    <div class="image-container">
+        <img src="static/images/editing/girl_coffee/mtflow_a girl with black hair and a white shirt is holding a coffee and a book_img_0.jpg" alt="Image 3">
+        <div class="image-caption"> + <i style="color: #B22222;">book</i></div>
+    </div>
+    <div class="image-container">
+        <img src="static/images/editing/girl_coffee/mtflow_a girl with black hair and a red shirt is holding a coffee and a book_img_0.jpg" alt="Image 4">
+        <div class="image-caption">  <i style="color: #B22222;">[red]</i> skirt</div>
+    </div>
+    <div class="image-container">
+        <img src="static/images/editing/girl_coffee/mtflow_a girl with black hair and is holding a coffee and a bunch of flower, carrying schoolbag on the back.jpg" alt="Image 5">
+        <div class="image-caption"><del>book</del> &rarr; <i style="color: #B22222;">a bunch of flower</i></div>
+    </div>
+</div>
+
+
+    </div>
+    </div>
+  </section>
+  <!-- End reconstruction image -->
+
+  <!-- Comparison
+<section class="hero is-small">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+      <h2 class="title is-3">Comparisons</h2>
+
+    
+    <div class="item">
+    <div class="image-row-slide">
+      <div class="image-container">
+          <img src="static/images/statue/origin image.png" alt="Image 1">
+          <div class="image-caption">source</div>
+      </div>
+      <div class="image-container">
+          <img src="static/images/statue/a man walking.png" alt="Image 2">
+          <div class="image-caption">a walking man </div>
+      </div>
+      <div class="image-container">
+          <img src="static/images/statue/this man is in a bus.png" alt="Image 3">
+          <div class="image-caption">this man is in a bus</div>
+      </div>
+      <div class="image-container">
+          <img src="static/images/statue/a man swimming.png" alt="Image 4">
+          <div class="image-caption">a swimming man</div>
+      </div>
+      <div class="image-container">
+          <img src="static/images/statue/two men playing chess.png" alt="Image 5">
+          <div class="image-caption">two men playing chess</div>
+      </div>
+  </div>
+  </div>
+  
+  <div class="item">
+  <div class="image-row-slide">
+    <div class="image-container">
+        <img src="static/images/old man/origin image.png" alt="Image 1">
+        <div class="image-caption">source</div>
+    </div>
+    <div class="image-container">
+        <img src="static/images/old man/an old man with smiling face.png" alt="Image 2">
+        <div class="image-caption">an old man with smiling face</div>
+    </div>
+    <div class="image-container">
+        <img src="static/images/old man/an old man wearing glasses.png" alt="Image 3">
+        <div class="image-caption">an old man wearing glasses</div>
+    </div>
+    <div class="image-container">
+        <img src="static/images/old man/an old man wearing a hat.png" alt="Image 4">
+        <div class="image-caption">an old man wearing a hat</div>
+    </div>
+    <div class="image-container">
+        <img src="static/images/old man/with black hair.png" alt="Image 5">
+        <div class="image-caption">with black hair</div>
+    </div>
+  </div>
+  </div>
+      </div>
+    </div>
+  </section>  -->
+  <!-- Comparison -->
+  
+
+
+<!-- demo video-->
+<section class="hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+    <h2 class="title is-3">Display Demo</h2>
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/demo.mp4"
+        type="video/mp4">
+      </video>
+      <p>
+        In the demo, users start by uploading one or more images. They select a base image and enter a text prompt to begin editing. After each editing round, users can choose a previously generated image from the history as the base image to continue the editing process.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- End demo video -->
+
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

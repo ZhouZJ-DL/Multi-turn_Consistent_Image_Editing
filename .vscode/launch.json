@@ -1,0 +1,109 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: gradio_demo.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python Debugger: edit with Arguments Fireflow",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--source_prompt",
+                "",
+                "--target_prompt",
+                "",
+                "--bench_config",
+                "/homedata/hfle/dataset/PIE-Bench/multi_turn_prompt/",
+                "--guidance",
+                "2",
+                "--source_img_dir",
+                "/homedata/hfle/personalization/FireFlow-Fast-Inversion-of-Rectified-Flow-for-Image-Semantic-Editing/gradio_examples/dog.jpg",
+                "--num_steps",
+                "8",
+                "--inject",
+                "0",
+                "--sampling_strategy",
+                "fireflow",
+                "--output_prefix",
+                "",
+                "--output_dir",
+                "outputs",
+            ]
+        },
+        {
+            "name": "Python Debugger: edit with Arguments rf_inversion",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--source_prompt",
+                "",
+                "--target_prompt",
+                "",
+                "--bench_config",
+                "/home/hfle/dataset/PIE-Bench/multi_turn_prompt/",
+                "--guidance",
+                "3.5",
+                "--source_img_dir",
+                "/home/hfle/personalization/FireFlow-Fast-Inversion-of-Rectified-Flow-for-Image-Semantic-Editing/gradio_examples/dog.jpg",
+                "--num_steps",
+                "25",
+                "--inject",
+                "0",
+                "--sampling_strategy",
+                "rf_inversion",
+                "--output_prefix",
+                "",
+                "--output_dir",
+                "outputs",
+            ]
+        },
+        {
+            "name": "Python Debugger: edit with Arguments Multi_Turn",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--source_prompt",
+                "",
+                "--target_prompt",
+                "",
+                "--bench_config",
+                "/home/hfle/dataset/PIE-Bench/multi_turn_prompt/",
+                "--guidance",
+                "3.5",
+                "--source_img_dir",
+                "/home/hfle/personalization/FireFlow-Fast-Inversion-of-Rectified-Flow-for-Image-Semantic-Editing/gradio_examples/dog.jpg",
+                "--num_steps",
+                "15",
+                "--inject",
+                "0",
+                "--sampling_strategy",
+                "multi_turn_consistent",
+                "--output_prefix",
+                "",
+                "--output_dir",
+                "outputs",
+            ]
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+}
