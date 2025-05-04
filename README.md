@@ -36,7 +36,7 @@ You can install the required packages using pip:
 
 ```bash
 # Clone the repository first
-git clone https://github.com/your_username/your_repo_name.git
+git https://github.com/ZhouZJ-DL/Multi-turn_Consistent_Image_Editing.git
 # cd your_repo_name
 pip install -r requirements.txt
 ```
