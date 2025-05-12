@@ -40,7 +40,7 @@ def encode(init_image, torch_device, ae):
     init_image = init_image.unsqueeze(0) 
     init_image = init_image.to(torch_device)
     with torch.no_grad():
-        init_image = ae.encode(init_image.to()).to(torch.bfloat16)
+        init_image = ae.encode(init_image).to(torch.bfloat16)
     return init_image
 
 
@@ -133,7 +133,7 @@ class FluxEditor:
             init_image = torch.nn.functional.interpolate(init_image, (height, width))
             if self.offload:
                 self.ae.encoder.to(self.device)
-            init_image = self.ae.encode(init_image.to())
+            init_image = self.ae.encode(init_image)
             if self.offload:
                 self.ae = self.ae.cpu()
                 torch.cuda.empty_cache()
