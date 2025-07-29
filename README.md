@@ -35,9 +35,14 @@ By combining these techniques, our framework achieves high reconstruction accura
 You can install the required packages using pip:
 
 ```bash
-# Clone the repository first
+conda create -n MTC_edit python=3.12
+conda activate MTC_edit     
+
+# clone the repository
 git https://github.com/ZhouZJ-DL/Multi-turn_Consistent_Image_Editing.git
-# cd your_repo_name
+cd Multi-turn_Consistent_Image_Editing
+
+# install the required packages
 pip install -r requirements.txt
 ```
 
