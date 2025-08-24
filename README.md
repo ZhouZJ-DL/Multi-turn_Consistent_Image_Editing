@@ -39,7 +39,7 @@ conda create -n MTC_edit python=3.12
 conda activate MTC_edit     
 
 # clone the repository
-git https://github.com/ZhouZJ-DL/Multi-turn_Consistent_Image_Editing.git
+git clone https://github.com/ZhouZJ-DL/Multi-turn_Consistent_Image_Editing.git
 cd Multi-turn_Consistent_Image_Editing
 
 # install the required packages
@@ -47,8 +47,8 @@ pip install -r requirements.txt
 ```
 
 ## 🎛️ 2. Gradio Demo Usage
-Try our demo directly on HuggingFace Space [Deploying now]
-[![Huggingface space](https://img.shields.io/badge/🤗-Online%20Demo-blue.svg)]()
+Try our demo directly on HuggingFace Space.
+[![Huggingface space](https://img.shields.io/badge/🤗-Online%20Demo-blue.svg)](https://huggingface.co/spaces/ZhouZJ36DL/Multi-turn_Consistent_Image_Editing_FLUX.1-dev)
 
 Or
 
