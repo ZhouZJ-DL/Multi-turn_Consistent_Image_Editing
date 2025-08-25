@@ -186,8 +186,8 @@ class DoubleStreamBlock(nn.Module):
         # if using adaptive attention guidance during samping
         if not info['inverse'] and 'attn_guidance' in info['editing_strategy']:
             attn = adaptive_attention(q, k, v, pe=pe, txt_shape=txt.shape[1], img_shape=img.shape[1], cur_step=cur_step, cur_block=self.cur_block, info=info)
-        
-        attn = attention(q, k, v, pe=pe)
+        else:
+            attn = attention(q, k, v, pe=pe)
 
         txt_attn, img_attn = attn[:, : txt.shape[1]], attn[:, txt.shape[1] :]
 
