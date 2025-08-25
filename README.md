@@ -2,7 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-Multi_Turn-b31b1b.svg)](https://www.arxiv.org/abs/2505.04320)
 [![project](https://img.shields.io/badge/project-Multi_Turn-green.svg)](https://zhouzj-dl.github.io/Multi-turn_Consistent_Image_Editing/)
-<!--[![Huggingface space](https://img.shields.io/badge/🤗-Online%20Demo-blue.svg)]()[deploying]-->
+[![Huggingface space](https://img.shields.io/badge/🤗-Online%20Demo-blue.svg)](https://huggingface.co/spaces/ZhouZJ36DL/Multi-turn_Consistent_Image_Editing_FLUX.1-dev)
 
 *A multi-turn image editing framework is proposed that leverages flow matching inversion and a dual-objective guided sampling process to preserve the underlying image distribution across successive edits.*
 <!-- [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](link/to/your/huggingface_space) -->
